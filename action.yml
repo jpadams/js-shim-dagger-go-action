@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: 'Greet someone'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  greeting: # id of output
+    description: 'The greeting addressed to who-to-greet'
+runs:
+  using: 'node16'
+  main: 'index.js'
