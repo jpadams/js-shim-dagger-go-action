@@ -41,7 +41,8 @@ func main() {
 //			fmt.Fprintln(os.Stderr, "reading standard input:", err)
 //		}
 //	}
-	fmt.Print(greet(whoToGreet))
+	fmt.Println(greet(whoToGreet))
+	githubactions.SetOutput("greeting", greet(whoToGreet))
 }
 
 func greet(who string) string {
